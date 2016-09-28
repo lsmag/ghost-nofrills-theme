@@ -1,9 +1,13 @@
 body {
-    max-width: 800px;
+    max-width: 650px;
     background: #f2f2f2;
     color: #444;
     margin: 0 auto;
     font-size: 14px;
+}
+
+p {
+    line-height: 1.6;
 }
 
 .blog-header {
@@ -44,6 +48,7 @@ body {
 }
 
 .post-title {
+    font-size: 30px;
     margin: 10px 0;
 }
 
