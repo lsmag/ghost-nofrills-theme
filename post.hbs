@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{#post}}
+<article class="{{post_class}}">
+  <header class="post-header">
+    <h2 class="post-title">{{title}}</h2>
+    <section class="post-meta">
+      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+      {{tags prefix=" on "}}
+    </section>
+  </header>
+
+  <section class="post-content">
+    {{content}}
+  </section>
+
+  <footer class="read-next">
+    {{#next_post}}
+      <p>
+        Next article:
+        <a class="read-next-story prev" href="{{url}}">
+          {{title}}
+        </a>
+      </p>
+    {{/next_post}}
+
+    {{#prev_post}}
+      <p>
+        Previous article:
+        <a class="read-next-story prev" href="{{url}}">
+          {{title}}
+        </a>
+      </p>
+    {{/prev_post}}
+  </footer>
+</article>
+{{/post}}
